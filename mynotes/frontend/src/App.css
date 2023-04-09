@@ -35,6 +35,22 @@ code {
 
 .card-content {
   font-size: 16px;
+  max-height: 150px; /* Belirli bir yüksekliği sabitleyin */
+  overflow-y: auto; /* Yatay kaydırma çubuğu ekleyin */
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
 }
 
 .buttons {
@@ -62,3 +78,4 @@ code {
 .button-delete:hover {
   background-color: #ef5350;
 }
+
